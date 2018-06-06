@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<meta charset="utf-8">
+<title> Turorial Daw </title>
+<!--grupo CSS -->
+ <link rel="stylesheet" type="text/css" href="css/temaapp10.min.css">
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+ 
+ <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  
+  
+  
+  <script src="phonegap.js"></script><!--necesario*/-->
+ 
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/cola2.jpg','imagenes/eti2.jpg','imagenes/ele.jpg','imagenes/estru.jpg','imagenes/2.jpg','imagenes/4.jpg','imagenes/6.jpg','imagenes/5-2.jpg','imagenes/basica.jpg','imagenes/css1.jpg','imagenes/radial.jpg','imagenes/trans1.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> Turorial Daw </h1>
+  </div> 
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1> Siglas </h1>
+    <li> <b>H</b>yper </li>
+    <li> <b>T</b>ext</li>
+    <li> <b>M</b>arkup</li>
+    <li> <b>L</b>anguage</li>
+   
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/cola2.jpg',1)"><img src="imagenes/cola1.jpg" width="75%" height="75%" id="Image3"></a> </div>
+  </div>
+  <div>
+    <div data-role="collapsible" data-comtent-theme="false">
+    <h1> Etiquetas </h1>
+     <p>El código en HTML está formado por un <b>conjunto  de etiquetas (tags).</b> El navegador interpreta estas etiquetas al momento de cargar la página. <I> En HTML existen etiquetas de apertura y etiquetas de cierre, </I> <U> HTML tiene definidas gran variedad de etiquetas para distintos usos.</U>
+ </p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/eti2.jpg',1)"><img src="imagenes/eti.jpg" width="75%" height="75%" id="Image6"></a> </div>
+   
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> HTML </h2> 
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Elementos y Atributos </h2> 
+      </a>      
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Elementos de Body </h2>  
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> HTML5 </h2> 
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> CSS </h2> 
+      </a>      
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Pseudo-Clases para Formularios </h2> 
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Prefijos en CSS </h2> 
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Propiedad Transition </h2> 
+      </a>      
+     </li> 
+     
+     
+    </ul>
+  </div>
+  
+   <div>
+    <div data-role="collapsible" data-comtent-theme="false">
+    <h1> Datos del autor </h1>
+     <p> 
+     <li> Gabriela Rosales Morales </li>
+     <li> 4° "F" </li>
+     <li> Desarrolla Aplicaciones Móviles </li>
+     <li> <u>Tutorial Daw (Desarrolla Aplicaciones Web)</u></li>
+     <li> Profesor: José Antonio Gómez Hernández </li>
+ </p>
+ </div>
+    
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <img src="imagenes/hticon.png" width="46" height="46">
+    <h4> Turorial Daw </h4>
+     <h4> Gabriela Rosales Morales </h4>
+     </div>
+     </div>
+     </div>
+     
+     
+     
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> ¿Que es HTML? </h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p> Es un estándar que sirve de referencia del software que conecta con la elaboración de <b>páginas web</b> en sus diferentes versiones, <u> define una estructura básica y un código para la definición de contenido de una página web, como texto, imágenes,</u> entre otros.</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/estru.jpg',1)"><img src="imagenes/web.jpg" width="75%" height="75%" id="Image8"></a> </div>
+  </div>
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <img src="imagenes/hticon.png" width="46" height="46">
+    <h4> Turorial Daw </h4>
+     <h4> Gabriela Rosales Morales </h4>
+  </div>
+ </div>
+ 
+ 
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> Elementos y Atributos </h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <h2> Elementos </h2>
+    <p> Las etiquetas junto con su contenido, forman  lo que conocemos como un <b>elemento</b> HTML. <br> 
+    Todos los elementos HTML se pueden  dividir en dos tipos básicos:
+<li> <b>Elementos en bloque:</b> Un elemento en bloque es aquel que contiene un bloque significativo de contenido que debería mostrarse en su propia línea. Por ejemplo: párrafos, tablas,  listas, etc…</li>
+<li> <b>Elementos en línea:</b> Los elementos en línea usualmente contienen menos texto y se muestra junto a otro texto en la misma línea, cómo cuando se enfatizan palabras en una oración. </li>
+</p>
+<h2> Atributos </h2>
+<p> La etiqueta de apertura de un elemento puede  contener atributos que proporcionan más  información sobre el elemento. Los atributos deben aparecer solo en las  etiquetas de apertura. Algunos elementos requieren ciertos atributos de forma obligatoria, mientras que otros son opcionales.
+</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/ele.jpg',1)"><img src="imagenes/atri.jpg" width="75%" height="75%" id="Image7"></a> </div>
+    <h2> Comentarios </h2>
+    <p> Los <b>comentarios</b> en HTML son notas que <b>no</b>  se muestran en el navegador y que se  pueden	leer revisando el código fuente.
+</p>
+<img src="imagenes/come.jpg" width="40%" height="40%">
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <img src="imagenes/hticon.png" width="46" height="46">
+    <h4> Turorial Daw </h4>
+     <h4> Gabriela Rosales Morales </h4>
+  </div>
+ </div>
+
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> Elementos de Body </h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p> En el body estará todo nuestro contenido. HTML5 nos provee una gran  variedad de <b>etiquetas</b> para poder darle semántica al contenido. <u> Veremos las etiquetas más usadas:</u> </p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/2.jpg',1)"><img src="imagenes/1.jpg" width="75%" height="75%" id="Image11"></a> 
+    <br>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/4.jpg',1)"><img src="imagenes/3.jpg" width="75%" height="75%" id="Image12"></a>
+    <br> 
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/6.jpg',1)"><img src="imagenes/5.jpg" width="75%" height="75%" id="Image13"></a>
+    </div>
+    </div>
+    
+    <div data-role="main" class="ui-content" align="center">
+   <div style="width:60%">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+     <a href="http://www.htmlquick.com/es/reference/tags/body.html" data-role="button">
+       <p> Más información... </p>
+       </a>
+       </li>
+    </ul>
+    </div>
+    </div>
+    
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <img src="imagenes/hticon.png" width="46" height="46">
+  <h4> Turorial Daw </h4>
+     <h4> Gabriela Rosales Morales </h4>
+ </div>
+     </div>
+    
+    
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> HTML5 </h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p> HTML5 <b>no</b> es una reformulación de versiones previas. HTML5 incluye la redefinición de elementos, <b>la inclusión de nuevos elementos</b> e incluye el uso de nuevas tecnologías como video, audio y canvas. </p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/5-2.jpg',1)"><img src="imagenes/5-1.jpg" width="75%" height="75%" id="Image15"></a> </div>
+    <h2> Formularios en HTML5 </h2>
+    <p> Un formulario permite a un usuario ingresar  datos. La información que se ingresa se manda a un  servidor en un grupo de datos que consisten  del nombre de los elementos y sus valores. Para hacer uso de un formulario,  utilizaremos las etiquetas: (form)(/form). Requiere de los atributos action y method,  los cuales son la URL del form-handler y el  método HTTP por el cual se envían los  datos, respectivamente.
+    <br>
+    <li> <u> El valor por default de action es la URL  del documento actual </u> </li>
+    <li> <u> El valor por default de method es get (el  otro valor válido es post) </u> </li>
+</p>
+<h2> Partes de un formulario y tipos de INPUT </h2>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/parte1.jpg" alt="parte1" title="parte1" id="wows1_0"/></li>
+		<li><img src="data1/images/parte2.jpg" alt="parte2" title="parte2" id="wows1_1"/></li>
+		<li><img src="data1/images/parte3.jpg" alt="parte3" title="parte3" id="wows1_2"/></li>
+		<li><img src="data1/images/parte4.jpg" alt="parte4" title="parte4" id="wows1_3"/></li>
+		<li><img src="data1/images/atri2.jpg" alt="atri2" title="atri2" id="wows1_4"/></li>
+		<li><img src="data1/images/tipo1.jpg" alt="tipo1" title="tipo1" id="wows1_5"/></li>
+		<li><img src="data1/images/atri1.jpg" alt="atri1" title="atri1" id="wows1_6"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/tipo2.jpg" alt="wow slider" title="tipo2" id="wows1_7"/></a></li>
+		<li><img src="data1/images/tipo3.jpg" alt="tipo3" title="tipo3" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="parte1"><span><img src="data1/tooltips/parte1.jpg" alt="parte1"/>1</span></a>
+		<a href="#" title="parte2"><span><img src="data1/tooltips/parte2.jpg" alt="parte2"/>2</span></a>
+		<a href="#" title="parte3"><span><img src="data1/tooltips/parte3.jpg" alt="parte3"/>3</span></a>
+		<a href="#" title="parte4"><span><img src="data1/tooltips/parte4.jpg" alt="parte4"/>4</span></a>
+		<a href="#" title="atri2"><span><img src="data1/tooltips/atri2.jpg" alt="atri2"/>5</span></a>
+		<a href="#" title="tipo1"><span><img src="data1/tooltips/tipo1.jpg" alt="tipo1"/>6</span></a>
+		<a href="#" title="atri1"><span><img src="data1/tooltips/atri1.jpg" alt="atri1"/>7</span></a>
+		<a href="#" title="tipo2"><span><img src="data1/tooltips/tipo2.jpg" alt="tipo2"/>8</span></a>
+		<a href="#" title="tipo3"><span><img src="data1/tooltips/tipo3.jpg" alt="tipo3"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ </div>
+
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <img src="imagenes/hticon.png" width="46" height="46">
+    <h4> Turorial Daw </h4>
+     <h4> Gabriela Rosales Morales </h4>
+  </div>
+ </div>  
+    
+    
+    
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> ¿Qué es CSS? </h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p> 
+    <li> Cascading Style Sheets (CSS) <b>‘Hoja de estilo en cascada’</b> es un lenguaje usado para <u>definir y crear</u> la presentación de un documento estructurado escrito en HTML.</li>
+    <li> CSS <b>separa</b> la estructura de un documento de su presentación. </li>
+    <li> La información de estilo puede ser <b>definida</b> en un documento separado o en el mismo documento HTML. </li>
+</p></div>
+<h2> Evolución del CSS </h2>
+<img src="imagenes/evo.jpg" width="75%" height="75%">
+<h2> Sintaxis del CSS </h2>
+<img src="imagenes/sinta.jpg" width="75%" height="75%">
+<h2> Declaraciones y Estructura Básica </h2>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','imagenes/basica.jpg',1)"><img src="imagenes/decla.jpg" width="75%" height="75%" id="Image37"></a> </div>
+<h2> Espacio en los elementos de HTML </h2>
+<img src="imagenes/espacio.jpg" width="40%" height="40%">
+  
+  <h2> Selectores de CSS </h2>
+  <p>Definen que elementos HTML serán  afectados por las declaraciones.Existen varios tipos de selectores:
+<li> Elementos </li>
+<li> Clases </li>
+<li> ID’s </li>
+<li> Descendientes </li>
+<li> Hijos </li>
+<li> Adyacentes (hermanos o siblings), etc. </li>
+ </p>
+ <br>
+  <div data-role="main" class="ui-content" align="center">
+   <div style="width:60%">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+     <a href="https://codigofacilito.com/articulos/selectores-de-css" data-role="button">
+       <p> Más información... </p>
+       </a>
+       </li>
+    </ul>
+    </div>
+    </div>
+   
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <img src="imagenes/hticon.png" width="46" height="46">
+    <h4> Turorial Daw </h4>
+     <h4> Gabriela Rosales Morales </h4>
+  </div>
+ </div>
+    
+   
+   
+   <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> Pseudo-Clases para formularios </h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p>  Un pseudo-clases CSS consta de una clave precedida de dos puntos (:) que añadiremos al final del selector para indicar que daremos estilo a los elementos seleccionados solo cuando estos se encuentren en un estado determinado. Por ejmplo podríamos querer dar estilo a un elemento cuando éste se muestre al pasarle el puntero del ratón, o una caja de selección al estar habilitada o deshabilitada, o cuando un elemento es hijo directo de su padre el árbol DOM.</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image67','','imagenes/css1.jpg',1)"><img src="imagenes/css.jpg" width="982" height="612" id="Image67"></a></div>
+  </div>
+  
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <img src="imagenes/hticon.png" width="46" height="46">
+    <h4> Turorial Daw </h4>
+     <h4> Gabriela Rosales Morales </h4>
+  </div>
+ </div>
+   
+   
+   
+
+    
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> Prefijos en CSS </h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p> En CSS3 existen propiedades nuevas que  cada navegador interpreta de forma  diferente. Al no haber un estándar por el que se  tengan que regir los navegadores, se deben  usar los llamados <b>“prefijos”.</b>
+    Los principales prefijos css:<b> -webkit-, -moz-, -o-, -ms- </b> se anteponen al nombre de la propiedad del estilo para que el navegador web reconozca esa determinada <u> característica. </u> Se aplican normalmente a estilos css3 en experimentación que aún no forman parte de una especificación o estándar.
+</p></div>
+<img src="imagenes/pre.jpg" width="75%" height="75%">
+<h2> Propiedad Gradient </h2>
+<p> Hay dos tipos principales de Gradientes:
+<li> Linear </li>
+<li> Radial </li>
+</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','imagenes/radial.jpg',1)"><img src="imagenes/linear.jpg" width="75%" height="75%" id="Image43"></a> 
+<h2> Propiedad Transform </h2>
+<p> Esta propiedad aplica una transformación a un elemento en 2D o 3D.
+<u>Permite:</u> <b> rotar, escalar, mover, sesgar,  etc.</b> </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','imagenes/trans1.jpg',1)"><img src="imagenes/trans.jpg" width="75%" height="75%" id="Image44"></a> </div>
+
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <img src="imagenes/hticon.png" width="46" height="46">
+    <h4> Turorial Daw </h4>
+     <h4> Gabriela Rosales Morales </h4>
+  </div>
+ </div>
+ 
+ 
+ 
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> Propiedad Transition </h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p> Esta propiedad nos brinda una manera muy <u>sencilla</u> de animar los cambios en las propiedades CSS, en lugar de que los cambios se produzcan de manera instantánea.</p></div>
+    <img src="imagenes/propiedad.jpg" width="75%" height="75%">
+  <div data-role="content" align="center">
+  <div data-role="main" class="ui-content" align="center">
+   <div style="width:60%">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+     <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes" data-role="button">
+       <p> Más información... </p>
+       </a>
+       </li>
+    </ul>
+    </div>
+    </div>
+ 
+  
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <img src="imagenes/hticon.png" width="46" height="46">
+    <h4> Turorial Daw </h4>
+     <h4> Gabriela Rosales Morales </h4>
+  </div>
+ </div>
+    
+    
+    
+  
+ 
+    
+    
+ 
+     
+</body>
+</html>
